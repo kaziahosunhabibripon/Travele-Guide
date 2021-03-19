@@ -1,0 +1,43 @@
+[
+    {
+       "name": "Bus",
+        "imgUrl": "https://i.ibb.co/Cs177Vr/Bus.png",
+        "capacity": 30,
+       "price": 79,
+        "description": "luxury man volvo seat.",
+        "avatar": "B",
+        "type": "Double"
+
+    },
+    {
+        "name": "Bike",
+        "imgUrl": "https://i.ibb.co/Tg1q7xV/Bike.png",
+        "capacity": 2,
+        "price": 67,
+        "description": "Hydraulic brake with system auto gear luxury drive.",
+        "avatar": "K",
+        "type": "Single"
+
+    },
+    {
+        "name": "Car",
+        "imgUrl": "https://i.ibb.co/HY6w8qt/Car.png",
+        "capacity": 4,
+        "price": 78,
+        "description": "luxury hyundai seat drive smooth way feel like haven",
+        "avatar": "C",
+        "type": "Family"
+
+    },
+    {
+        "name": "Train",
+        "imgUrl": "https://i.ibb.co/Dk55L0S/Train.png",
+        "capacity": 2,
+        "price": 81,
+        "description": "luxury cabin seat sound proof smooth way drive feel like haven with.",
+        "avatar": "T",
+        "type": "All"
+
+    }
+
+]

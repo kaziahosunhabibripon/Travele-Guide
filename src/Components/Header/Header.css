@@ -1,0 +1,14 @@
+.text-color{
+    color:orange;
+    font-weight:bold;
+    font-size:25px;
+    font-family: 'Roboto', sans-serif;
+    padding: auto;
+}
+.text-colors{
+    color:blue;
+    font-weight:bold;
+    font-size:25px;
+    font-family: 'Roboto', sans-serif;
+    padding: auto;
+}
