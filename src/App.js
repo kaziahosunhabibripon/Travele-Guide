@@ -7,6 +7,7 @@ import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
 import Login from './Components/Login/Login';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Destination from './Components/Destination/Destination';
 
 export const UserContext = createContext();
 function App() {
@@ -22,8 +23,8 @@ function App() {
             <Route path="/login">
                 <Login/>
             </Route>
-            <PrivateRoute path="/login">
-                <Login/>
+            <PrivateRoute path="/destination/:type">
+                <Destination/>
             </PrivateRoute>
             <Route exact path="/">
                 <Home/>
