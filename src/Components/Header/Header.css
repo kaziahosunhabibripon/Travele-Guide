@@ -1,11 +1,11 @@
-.text-color{
+.nav-color{
     color:orange;
     font-weight:bold;
     font-size:25px;
     font-family: 'Roboto', sans-serif;
     padding: auto;
 }
-.text-colors{
+.nav-colors{
     color:blue;
     font-weight:bold;
     font-size:25px;
