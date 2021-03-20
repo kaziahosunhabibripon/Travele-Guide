@@ -3,8 +3,8 @@
     justify-content: center;
 }
 .login{
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
 }
 .signup-form{
     padding:5px;
@@ -17,7 +17,7 @@
     border-radius: 5px;
     width: 80%; 
 }
-.bt
+
 .error{
     color: red;
 }
@@ -34,26 +34,28 @@ h3 {
      padding:0 10px; 
  }
 
- .btn-custom {
-     width: 80%;
-     color:white;
-     padding: 5px;
-     margin: 5px;
-     text-align: center;
-     justify-content: center;
-     align-items: center;
-     
-     background-color:orangered;
+ 
+
+ .error{
+     color:red;
  }
- .btn-socialMedia{
-    width: 80%;
-    color:Black;
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
-    justify-content: center;
-    align-items: center; 
-    background-color:white;
-    border:1px solid grey;
-    border-radius:20px;
+ .success{
+     color:green;
  }
+ .form-heading{
+     text-align: left;
+     margin-left:10%;
+ }
+ .btn-submit{
+     width:80%;
+     height: auto;
+     padding: 8px;
+     border-radius:10px;
+     color:#fff;
+     background-color:rgba(236, 84, 109, 0.623);
+     outline: none;
+     border:none;
+     font-size: 1.1em;
+     margin-bottom: 10px;
+ }
+ 

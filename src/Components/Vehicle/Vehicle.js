@@ -19,11 +19,10 @@ export default function Vehicle ({vehicle}){
     const {imgUrl, name} = vehicle;
     return (
         <div className="col-md-3 my-1 py-5 text-center" expand="lg">
-            <Card style={{width: "18 rm"}}>
-                <Card.Img variant="top" src={imgUrl} alt="" style={imageStyle}/>
+            <Card onClick={()=> handleBooking(vehicle.type)} style={{width: "18 rm"}}>
+                <Card.Img variant="top" src={imgUrl} alt="" style={imageStyle} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>             
-                    <Button onClick={()=> handleBooking(vehicle.type)} variant="primary"> Booking Ticket  </Button> 
                 </Card.Body>
             </Card>
         </div>
