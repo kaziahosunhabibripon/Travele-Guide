@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 
 
@@ -12,14 +12,14 @@ export default function Vehicle ({vehicle}){
         margin:"10px auto"
     }
     const history = useHistory();
-    const handleBooking = (type)=>{
-        history.push(`/destination/${type}`);
+    const handleBooking = (name)=>{
+        history.push(`/destination/${name}`);
        
     }
     const {imgUrl, name} = vehicle;
     return (
         <div className="col-md-3 my-1 py-5 text-center" expand="lg">
-            <Card onClick={()=> handleBooking(vehicle.type)} style={{width: "18 rm"}}>
+            <Card onClick={()=> handleBooking(vehicle.name)} style={{width: "18 rm"}}>
                 <Card.Img variant="top" src={imgUrl} alt="" style={imageStyle} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>             

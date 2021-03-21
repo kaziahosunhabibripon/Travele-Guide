@@ -11,8 +11,7 @@ const Home = () => {
 
     return (
         <div className="row align-items-center m-0 p-0 home-div" >           
-            {
-                
+            {  
                 data?.map(vehicle => <Vehicle key={vehicle.type} vehicle={vehicle}></Vehicle>)
             }
         </div>

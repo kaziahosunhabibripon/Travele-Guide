@@ -8,37 +8,41 @@ import NotFound from './Components/NotFound/NotFound';
 import Login from './Components/Login/Login';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import Destination from './Components/Destination/Destination';
-import CreateAccount from './Components/Login/CreateAccount';
 
 export const UserContext = createContext();
-function App() {
+function App(props) {
+  
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
+    
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]} >
+     <h1 className="text-left">{loggedInUser.name} </h1>
       <Router>
         <Header />
         <Switch>
-            <Route path="/home">
-                <Home/>
-            </Route>
-            <Route path="/login">
-                <Login/>
-            </Route>
-            <Route path="/createAccount">
-                <CreateAccount/>
-            </Route>
-            <PrivateRoute path="/destination/:type">
-                <Destination/>
-            </PrivateRoute>
-            <Route exact path="/">
-                <Home/>
-            </Route>
-            <Route path="*">
-                <NotFound/>
-            </Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/blog">
+            <Home />
+          </Route>
+          <Route path="/contact">
+            <Home />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <PrivateRoute path="/destination/:name">
+            <Destination />
+          </PrivateRoute>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="*">
+            <NotFound />
+          </Route>
         </Switch>
       </Router>
-
     </UserContext.Provider>
   );
 }

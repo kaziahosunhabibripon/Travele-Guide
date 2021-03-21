@@ -1,0 +1,147 @@
+[
+    { "id":1001,
+        "name": "Bus",
+        "imgUrl":"https://i.ibb.co/Cs177Vr/Bus.png",
+        "capacity":30,
+        "price": 79,
+        "description":"luxury man volvo seat.",
+        "type": "A"
+  
+   },
+   
+      { "id":1002,
+          "name": "Bus",
+          "imgUrl":"https://i.ibb.co/Cs177Vr/Bus.png",
+          "capacity":30,
+          "price": 75,
+          "description":"luxury hyundai volvo seat.",
+          "type": "B"
+    
+     },
+      { "id":1003,
+          "name": "Bus",
+          "imgUrl":"https://i.ibb.co/Cs177Vr/Bus.png",
+          "capacity":30,
+          "price": 70,
+          "description":"Air conditioner seat .",
+          "type": "C"
+    
+     },
+      { "id":1004,
+          "name": "Bus",
+          "imgUrl":"https://i.ibb.co/Cs177Vr/Bus.png",
+          "capacity":30,
+          "price": 67,
+          "description":"Normal seat.",
+          "type": "D"
+    
+     },
+      { "id":1005,
+          "name": "Bike",
+          "imgUrl":"https://i.ibb.co/Tg1q7xV/Bike.png",
+          "capacity":2,
+          "price": 67,
+          "description":"Hydraulic brake with system auto gear luxury drive.",
+          "type": "A"
+    
+     },
+      { "id":1006,
+          "name": "Bike",
+          "imgUrl":"https://i.ibb.co/Tg1q7xV/Bike.png",
+          "capacity":2,
+          "price": 61,
+          "description":"Air brake system with auto gear comfortable ride.",
+          "type": "B"
+    
+     },
+      { "id":1007,
+          "name": "Bike",
+          "imgUrl":"https://i.ibb.co/Tg1q7xV/Bike.png",
+          "capacity":3,
+          "price": 55,
+          "description":"Normal brake system with auto gear feel comfortable",
+          "type": "C"
+    
+     },
+      { "id":1008,
+          "name": "Bike",
+          "imgUrl":"https://i.ibb.co/Tg1q7xV/Bike.png",
+          "capacity":3,
+          "price": 50,
+          "description":"Normal brake system with manual gear feel easy",
+          "type": "D"
+    
+     },
+      { "id":1009,
+          "name": "Car",
+          "imgUrl":"https://i.ibb.co/HY6w8qt/Car.png",
+          "capacity":4,
+          "price":78,
+          "description":"luxury hyundai seat drive smooth way feel like haven",
+          "type": "A"
+    
+     },
+      { "id":1010,
+          "name": "Car",
+          "imgUrl":"https://i.ibb.co/HY6w8qt/Car.png",
+          "capacity":5,
+          "price": 71,
+          "description":"luxury seat drive smooth way to drive feel comfortable",
+          "type": "B"
+    
+     },
+      { "id":1011,
+          "name": "Car",
+          "imgUrl":"https://i.ibb.co/HY6w8qt/Car.png",
+          "capacity":5,
+          "price": 67,
+          "description":"Normal seat drive normal way to drive feel good",
+          "type": "C"
+    
+     },
+      { "id":1012,
+          "name": "Car",
+          "imgUrl":"https://i.ibb.co/HY6w8qt/Car.png",
+          "capacity":5,
+          "price": 60,
+          "description":"Normal seat drive normal way to drive feel easy",
+          "type": "D"
+    
+     },
+      { "id":1013,
+          "name": "Train",
+          "imgUrl":"https://i.ibb.co/Dk55L0S/Train.png",
+          "capacity":2,
+          "price": 81,
+          "description":"luxury cabin seat sound proof smooth way drive feel like haven with.",
+          "type": "A"
+    
+     },
+      { "id":1014,
+          "name": "Train",
+          "imgUrl":"https://i.ibb.co/Dk55L0S/Train.png",
+          "capacity":1,
+          "price": 77,
+          "description":"luxury single seat smooth way drive feel like comfortable",
+          "type": "B"
+    
+     },
+      { "id":1015,
+          "name": "Train",
+          "imgUrl":"https://i.ibb.co/Dk55L0S/Train.png",
+          "capacity":1,
+          "price": 59,
+          "description":"single chair seat smooth way drive feel like good",
+          "type": "C"
+    
+     },
+      { "id":1016,
+          "name": "Train",
+          "imgUrl":"https://i.ibb.co/Dk55L0S/Train.png",
+          "capacity":1,
+          "price": 52,
+          "description":"Attached two chair seat feel like good",
+          "type": "D"
+    
+     }
+  ]

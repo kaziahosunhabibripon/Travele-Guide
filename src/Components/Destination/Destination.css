@@ -1,0 +1,22 @@
+.search-content{
+    border: 1px solid grey;
+   
+    background-color:#f0eeeef5;
+}
+.search-content input{
+        display: block;
+        margin: 10px auto;
+        padding: 5px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        width: 80%;
+       
+    
+}
+.search-content label{
+    text-align: left;
+    margin: 10px 25px;
+    padding:5px;
+   
+
+}
