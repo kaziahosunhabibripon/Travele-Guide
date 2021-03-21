@@ -16,6 +16,7 @@ export default function Vehicle ({vehicle}){
         history.push(`/destination/${name}`);
        
     }
+    console.log(vehicle);
     const {imgUrl, name} = vehicle;
     return (
         <div className="col-md-3 my-1 py-5 text-center" expand="lg">

@@ -9,7 +9,7 @@
   
    },
    
-      { "id":1002,
+      { "id":1001,
           "name": "Bus",
           "imgUrl":"https://i.ibb.co/Cs177Vr/Bus.png",
           "capacity":30,
@@ -18,7 +18,7 @@
           "type": "B"
     
      },
-      { "id":1003,
+      { "id":1001,
           "name": "Bus",
           "imgUrl":"https://i.ibb.co/Cs177Vr/Bus.png",
           "capacity":30,
@@ -27,7 +27,7 @@
           "type": "C"
     
      },
-      { "id":1004,
+      { "id":1001,
           "name": "Bus",
           "imgUrl":"https://i.ibb.co/Cs177Vr/Bus.png",
           "capacity":30,
@@ -36,7 +36,7 @@
           "type": "D"
     
      },
-      { "id":1005,
+      { "id":1002,
           "name": "Bike",
           "imgUrl":"https://i.ibb.co/Tg1q7xV/Bike.png",
           "capacity":2,
@@ -45,7 +45,7 @@
           "type": "A"
     
      },
-      { "id":1006,
+      { "id":1002,
           "name": "Bike",
           "imgUrl":"https://i.ibb.co/Tg1q7xV/Bike.png",
           "capacity":2,
@@ -54,7 +54,7 @@
           "type": "B"
     
      },
-      { "id":1007,
+      { "id":1002,
           "name": "Bike",
           "imgUrl":"https://i.ibb.co/Tg1q7xV/Bike.png",
           "capacity":3,
@@ -63,7 +63,7 @@
           "type": "C"
     
      },
-      { "id":1008,
+      { "id":1002,
           "name": "Bike",
           "imgUrl":"https://i.ibb.co/Tg1q7xV/Bike.png",
           "capacity":3,
@@ -72,7 +72,7 @@
           "type": "D"
     
      },
-      { "id":1009,
+      { "id":1003,
           "name": "Car",
           "imgUrl":"https://i.ibb.co/HY6w8qt/Car.png",
           "capacity":4,
@@ -81,7 +81,7 @@
           "type": "A"
     
      },
-      { "id":1010,
+      { "id":1003,
           "name": "Car",
           "imgUrl":"https://i.ibb.co/HY6w8qt/Car.png",
           "capacity":5,
@@ -90,7 +90,7 @@
           "type": "B"
     
      },
-      { "id":1011,
+      { "id":1003,
           "name": "Car",
           "imgUrl":"https://i.ibb.co/HY6w8qt/Car.png",
           "capacity":5,
@@ -99,7 +99,7 @@
           "type": "C"
     
      },
-      { "id":1012,
+      { "id":1003,
           "name": "Car",
           "imgUrl":"https://i.ibb.co/HY6w8qt/Car.png",
           "capacity":5,
@@ -108,7 +108,7 @@
           "type": "D"
     
      },
-      { "id":1013,
+      { "id":1004,
           "name": "Train",
           "imgUrl":"https://i.ibb.co/Dk55L0S/Train.png",
           "capacity":2,
@@ -117,7 +117,7 @@
           "type": "A"
     
      },
-      { "id":1014,
+      { "id":1004,
           "name": "Train",
           "imgUrl":"https://i.ibb.co/Dk55L0S/Train.png",
           "capacity":1,
@@ -126,7 +126,7 @@
           "type": "B"
     
      },
-      { "id":1015,
+      { "id":1004,
           "name": "Train",
           "imgUrl":"https://i.ibb.co/Dk55L0S/Train.png",
           "capacity":1,
@@ -135,7 +135,7 @@
           "type": "C"
     
      },
-      { "id":1016,
+      { "id":1004,
           "name": "Train",
           "imgUrl":"https://i.ibb.co/Dk55L0S/Train.png",
           "capacity":1,
