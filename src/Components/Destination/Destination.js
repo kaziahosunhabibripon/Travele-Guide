@@ -115,7 +115,7 @@ const Destination = () => {
 
 
             <div className="col-md-6 text-center py-1 my-1">
-                {
+               
                     <LoadScript
                     googleMapsApiKey="YOUR_API_KEY"
                 >
@@ -127,8 +127,8 @@ const Destination = () => {
                         { /* Child components, such as markers, info windows, etc. */}
                         <></>
                     </GoogleMap>
-                </LoadScript> || <img src={Map} alt="" />
-                }
+                </LoadScript> ||<img src={Map} alt="" />
+               
 
                 
             </div>
