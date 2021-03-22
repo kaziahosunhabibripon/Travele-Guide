@@ -3,8 +3,6 @@ import Calendar from 'react-calendar';
 import { useParams } from 'react-router';
 import './Destination.css';
 import Details from "../../Data/details.json";
-import Map from "../../Images/Map.png";
-import { Card } from '@material-ui/core';
 import peopleicon from '../../Images/peopleicon.png';
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
