@@ -37,63 +37,72 @@ const Destination = () => {
         newPickupPoint[e.target.name] = e.target.value;
         setPick(newPickupPoint);
     }
-    const [show, setShow] = useState(false);
-    const showDisplay = (e) => {
-        setShow(show);
+    const [show, setShow] = useState('search-content');
+    const showDisplay = () => {
+        setShow(true);
+        return setShow;
     }
+
+
     return (
         <div className="row">
-            <div className="col-md-4 my-1 p-5">
-                <form className="search-content" onSubmit={handleSearch}>
-                    <h1 className="text-center">Select Route</h1>
-                    <label htmlFor="" className="label" >Traveler Name</label>
-                    <input type="text" placeholder="Traveler Name" name="traveler" onBlur={searchChange} required />
-                    <label htmlFor="" className="label" > Pick From</label>
-                    <input type="text" placeholder="Enter Pickup point address" name="pickup" onBlur={searchChange} required />
-                    <label htmlFor="" className="label" >Pick To</label>
-                    <input type="text" placeholder="Enter Destination address" name="pickDown" onBlur={searchChange} required />
-                    <button className="btn-submit" > Search Vehicle </button>
+            <div className="col-md-4 mb-1 p-5">
+                {
+                    show &&
+                    <form className="search-content" onSubmit={handleSearch}>
+                        <h1 className="text-center">Select Route</h1>
+                        <label htmlFor="" className="label" >Traveler Name</label>
+                        <input type="text" placeholder="Traveler Name" name="traveler" onBlur={searchChange} required />
+                        <label htmlFor="" className="label" > Pick From</label>
+                        <input type="text" placeholder="Enter Pickup point address" name="pickup" onBlur={searchChange} required />
+                        <label htmlFor="" className="label" >Pick To</label>
+                        <input type="text" placeholder="Enter Destination address" name="pickDown" onBlur={searchChange} required />
+                        <button className="btn-submit" onClick={() => showDisplay(true)}> Search Vehicle </button>
+                        <Calendar onChange={onChange} value={dateState} />
+                    </form>
+                }
 
-                </form>
-                <Calendar onChange={onChange} value={dateState} />
-                <div className="passengerDetails p-2 my-2">
-                     <p>Passenger Name: {pick.traveler}</p>
-                    <p>PickPoint: {pick.pickup}</p>
-                    <p>PickDown: {pick.pickDown}</p>
-                </div>
+                <div className="color">
+                    <div className="passengerDetails ">
+                        <p>Passenger Name: {pick.traveler}</p>
+                        <p>PickPoint: {pick.pickup}</p>
+                        <p>PickDown: {pick.pickDown}</p>
+                    </div>
 
-                <div className="vechilesDetails p-2 my-2" >
-                    
-                    <div className="vechile-photo">
-                        <img src={selectedVehicle?.imgUrl} alt="" width="90%" />
+                    <div className="vechilesDetails " >
+                        <div className="vechile-photo">
+                            <img src={selectedVehicle?.imgUrl} alt="" width="90%" />
+                        </div>
+                        <div className="ticket">
+                            <h3> {selectedVehicle?.name}</h3>
+                            <h3><img src={peopleicon} alt="" width="50%" /> {selectedVehicle?.capacity}</h3>
+                            <h6>${selectedVehicle?.price}</h6>
+                        </div>
                     </div>
-                    <div className="ticket">
-                        <h3> {selectedVehicle?.name}</h3>
-                        <h3><img src={peopleicon} alt="" width="50%" /> {selectedVehicle?.capacity}</h3>
-                        <h6>${selectedVehicle?.price}</h6>
+                    <div className="vechilesDetails" >
+                        <div className="vechile-photo">
+                            <img src={selectedVehicle?.imgUrl} alt="" width="90%" />
+                        </div>
+                        <div className="ticket">
+                            <h3> {selectedVehicle?.name}</h3>
+                            <h3><img src={peopleicon} alt="" width="50%" /> {selectedVehicle?.capacity}</h3>
+                            <h6>${selectedVehicle?.price}</h6>
+                        </div>
                     </div>
-                </div>
-                <div className="vechilesDetails p-2 my-2" >
-                    <div className="vechile-photo">
-                        <img src={selectedVehicle?.imgUrl} alt="" width="90%" />
-                    </div>
-                    <div className="ticket">
-                        <h3> {selectedVehicle?.name}</h3>
-                        <h3><img src={peopleicon} alt="" width="50%" /> {selectedVehicle?.capacity}</h3>
-                        <h6>${selectedVehicle?.price}</h6>
-                    </div>
-                </div>
-                <div className="vechilesDetails p-2 my-2" >
-                    <div className="vechile-photo">
-                        <img src={selectedVehicle?.imgUrl} alt="" width="90%" />
-                    </div>
-                    <div className="ticket">
-                        <h3> {selectedVehicle?.name}</h3>
-                        <h3><img src={peopleicon} alt="" width="50%" /> {selectedVehicle?.capacity}</h3>
-                        <h6>${selectedVehicle?.price}</h6>
+                    <div className="vechilesDetails " >
+                        <div className="vechile-photo">
+                            <img src={selectedVehicle?.imgUrl} alt="" width="90%" />
+                        </div>
+                        <div className="ticket">
+                            <h3> {selectedVehicle?.name}</h3>
+                            <h3><img src={peopleicon} alt="" width="50%" /> {selectedVehicle?.capacity}</h3>
+                            <h6>${selectedVehicle?.price}</h6>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
             <div className="col-md-6 text-center py-1 my-1">
 
                 <img src={Map} alt="" />

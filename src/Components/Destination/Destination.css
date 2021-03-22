@@ -22,14 +22,18 @@
 .vechilesDetails{
     display:flex;
     flex-direction:row;
-    background:#f0eeeef5;
+    background:white;
+    border-radius: 10px;
+    padding: 5px;
+    width:90%;
     
-    border-radius: 5px;
+    text-align: center;
+    margin:15px auto;
 }
 .vechile-photo{
     justify-content:left;
-    width:45%;
-   
+    width:45%; 
+    height:90%;
     }
 .ticket{
     width:55%;
@@ -41,13 +45,22 @@
    
 }
 .passengerDetails{
-    background:rgba(201, 105, 71, 0.753);
-    border-radius: 5px;
+    background:rgba(236, 149, 143, 0.952);
     font-size:bold;
     font-weight:bold;
-    padding: 25px;
     color:Black;
-  justify-self: center;
-  align-items:left;
-  
+    align-items:left;
+    border-radius: 10px;
+    padding: 5px 15px;
+    width:90%;
+    margin:15px auto;
+}
+.color{
+    background-color:#f0eeeef5;
+    width: 100%;
+    height:auto;
+    border: .1px solid grey;
+    border-radius: 10px;
+
+
 }
