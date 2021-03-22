@@ -7,13 +7,13 @@ import peopleicon from '../../Images/peopleicon.png';
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 const containerStyle = {
-    width: '400px',
-    height: '400px'
+    width: '100%',
+    height: '100%'
 };
 
 const center = {
-    lat: -3.745,
-    lng: -38.523
+    lat: 27.2046,
+    lng: 77.4977
 };
 const Destination = () => {
 
@@ -104,13 +104,13 @@ const Destination = () => {
                     }
                     
             </div>
-            <div className="col-md-6 text-center py-1 my-1">
+            <div className="col-md-6 text-center ">
 
-                <LoadScript googleMapsApiKey="YOUR_API_KEY">
+                <LoadScript googleMapsApiKey="API_key">
                     <GoogleMap
                         mapContainerStyle={containerStyle}
                         center={center}
-                        zoom={10}>
+                        zoom={14}>
                     </GoogleMap>
                 </LoadScript>
                 
