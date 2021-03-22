@@ -111,7 +111,7 @@ function Login() {
                 }
                 <input type="text" onBlur={handleBlur} name="email" placeholder="Enter your email address" required />
 
-                <input type="password" onBlur={handleBlur} id='' name="password" placeholder="Enter your password" required />
+                <input type="password" onBlur={handleBlur} id='' name="password" placeholder="password should be 2 alphabet and 6 number" required />
                 <input type="submit" value={newUser ? 'Create an account' : 'LogIn'} onClick={handleSubmit} className="btn-submit" />
                 <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id='' /> &nbsp;
                 <h2 htmlFor="newUser" > Or </h2>
