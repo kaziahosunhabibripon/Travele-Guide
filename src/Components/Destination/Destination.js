@@ -20,7 +20,7 @@ const center = {
 const Destination = () => {
 
 
-    const { name, description, imgUrl, capacity, price, id } = useParams();
+    const { name } = useParams();
     const selectedVehicle = Details.find(vc => vc.name === name);
 
     const [pick, setPick] = useState({
@@ -32,7 +32,6 @@ const Destination = () => {
 
     const [dateState, setDateState] = useState(new Date());
     function onChange(dateState) {
-        // change results based on calendar date click
         setDateState(dateState);
     }
     const handleSearch = (e) => {
@@ -112,19 +111,14 @@ const Destination = () => {
             <div className="col-md-6 text-center py-1 my-1">
 
                 <LoadScript
-                    googleMapsApiKey="YOUR_API_KEY"
-                >
+                    googleMapsApiKey="YOUR_API_KEY">
                     <GoogleMap
                         mapContainerStyle={containerStyle}
                         center={center}
-                        zoom={10}
-                    >
-                        { /* Child components, such as markers, info windows, etc. */}
-                        <></>
+                        zoom={10}>
                     </GoogleMap>
                 </LoadScript>
                 <img src={Map} alt="" />
-
 
 
             </div>
