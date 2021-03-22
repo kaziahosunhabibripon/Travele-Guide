@@ -19,10 +19,8 @@ const center = {
 };
 const Destination = () => {
 
-
     const { name } = useParams();
     const selectedVehicle = Details.find(vc => vc.name === name);
-
     const [pick, setPick] = useState({
         pickup: "",
         pickDown: '',
@@ -110,17 +108,14 @@ const Destination = () => {
             </div>
             <div className="col-md-6 text-center py-1 my-1">
 
-                <LoadScript
-                    googleMapsApiKey="YOUR_API_KEY">
+                <LoadScript googleMapsApiKey="YOUR_API_KEY">
                     <GoogleMap
                         mapContainerStyle={containerStyle}
                         center={center}
                         zoom={10}>
                     </GoogleMap>
                 </LoadScript>
-                <img src={Map} alt="" />
-
-
+                
             </div>
         </div>
     );
