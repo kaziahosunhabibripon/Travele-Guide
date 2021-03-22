@@ -6,6 +6,17 @@ import Details from "../../Data/details.json";
 import Map from "../../Images/Map.png";
 import { Card } from '@material-ui/core';
 import peopleicon from '../../Images/peopleicon.png';
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
+
+const containerStyle = {
+    width: '400px',
+    height: '400px'
+};
+
+const center = {
+    lat: -3.745,
+    lng: -38.523
+};
 const Destination = () => {
 
 
@@ -104,8 +115,22 @@ const Destination = () => {
 
 
             <div className="col-md-6 text-center py-1 my-1">
+                {
+                    <LoadScript
+                    googleMapsApiKey="YOUR_API_KEY"
+                >
+                    <GoogleMap
+                        mapContainerStyle={containerStyle}
+                        center={center}
+                        zoom={10}
+                    >
+                        { /* Child components, such as markers, info windows, etc. */}
+                        <></>
+                    </GoogleMap>
+                </LoadScript> || <img src={Map} alt="" />
+                }
 
-                <img src={Map} alt="" />
+                
             </div>
         </div>
     );
