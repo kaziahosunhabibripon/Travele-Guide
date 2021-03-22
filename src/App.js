@@ -16,7 +16,7 @@ function App(props) {
   return (
     
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]} >
-     <h1 className="text-left">{loggedInUser.name} </h1>
+     <h5 className="text-left m-0 p-0">{loggedInUser.name} </h5>
       <Router>
         <Header />
         <Switch>

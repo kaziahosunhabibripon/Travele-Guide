@@ -1,6 +1,7 @@
 .search-content{
     border: 1px solid grey;
     background-color:#f0eeeef5;
+    display: block;
     
 }
 .search-content input{
@@ -9,15 +10,44 @@
         padding: 10px 5px;
         border: 1px solid grey;
         border-radius: 5px;
-        width: 80%;
-        
-
-    
+        width: 80%; 
 }
 .search-content label{
     text-align: left;
     margin: 5px 25px;
     padding:5px;
-   
 
+
+}
+.vechilesDetails{
+    display:flex;
+    flex-direction:row;
+    background:#f0eeeef5;
+    
+    border-radius: 5px;
+}
+.vechile-photo{
+    justify-content:left;
+    width:45%;
+   
+    }
+.ticket{
+    width:55%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 5px 20px;
+    margin-left: 10px;
+   
+}
+.passengerDetails{
+    background:rgba(201, 105, 71, 0.753);
+    border-radius: 5px;
+    font-size:bold;
+    font-weight:bold;
+    padding: 25px;
+    color:Black;
+  justify-self: center;
+  align-items:left;
+  
 }

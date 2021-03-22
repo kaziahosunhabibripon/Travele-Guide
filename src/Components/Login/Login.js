@@ -1,15 +1,14 @@
 import React, { useContext, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faGift, faGlassMartini, faGlobe, faMap } from '@fortawesome/free-solid-svg-icons'
-
+import { faGift,  faGlobe, faMap } from '@fortawesome/free-solid-svg-icons'
 import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router';
 import {
     handleFbSignIn, handleGithubSignIn, handleGoogleSignIn, handleSignOut,
     initializeLoginFramework, createUserWithEmailAndPassword, signInWithEmailAndPassword
 } from './LoginManager';
-import { Form } from 'react-bootstrap';
 import './Login.css';
+
 initializeLoginFramework();
 
 function Login() {
@@ -98,6 +97,7 @@ function Login() {
             history.replace(from);
         }
     }
+   
     return (
         <div className='col-md-4 text-center'>
             
@@ -115,13 +115,9 @@ function Login() {
                 <input type="submit" value={newUser ? 'Create an account' : 'LogIn'} onClick={handleSubmit} className="btn-submit" />
                 <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id='' /> &nbsp;
                 <h2 htmlFor="newUser" > Or </h2>
-                
-                
-               
                 {
                     user.success && <p style={{ color: 'green' }}> User {newUser ? 'Created' : 'Logged In'} Successfully {user.error}</p>
                 }
-           
                 {
                     user.isSignedIn ? <button onClick={signOut} className="btn-submit"> Sign out </button> :
                         <button onClick={googleSignIn} className="btn-submit"><FontAwesomeIcon icon={faGlobe} /> &nbsp; Sign in With Google </button>

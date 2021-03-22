@@ -26,8 +26,8 @@ export const handleGoogleSignIn = () => {
             return signedInUser;
         })
         .catch(err => {
-            console.log(err);
-            console.log(err.message);
+            return(err);
+            
         })
 }
 export const handleFbSignIn = () => {
@@ -57,7 +57,7 @@ export const handleGithubSignIn = () => {
             var errorCode = error.code;
             var errorMessage = error.message;
             var email = error.email;
-            console.log(error, errorMessage, errorCode, email);
+            return(error, errorMessage, errorCode, email);
         });
 }
 export const handleSignOut = () => {
@@ -85,9 +85,9 @@ const updateUserName = name => {
         displayName: name
 
     }).then(() => {
-        console.log('user name Updated successfully ');
+        return('user name Updated successfully ');
     }).catch(error => {
-        console.log(error);
+        return(error);
     })
 }
 

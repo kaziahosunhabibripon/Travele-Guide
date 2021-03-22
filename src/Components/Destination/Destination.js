@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import { useParams } from 'react-router';
 import './Destination.css';
 import Details from "../../Data/details.json";
-
+import Map from "../../Images/Map.png";
+import { Card } from '@material-ui/core';
+import peopleicon from '../../Images/peopleicon.png';
 const Destination = () => {
-    const { name} = useParams();
-    const [selectedVehicle, setSelectedVehicle] = useState([]);
-    useEffect(() => {
-        setSelectedVehicle(Details);
-        console.log(Details);
-    }, [selectedVehicle])
+
+
+    const { name, description, imgUrl, capacity, price, id } = useParams();
+    const selectedVehicle = Details.find(vc => vc.name === name);
 
     const [pick, setPick] = useState({
         pickup: "",
@@ -18,9 +18,12 @@ const Destination = () => {
         traveler: ''
 
     });
-    
-    const [dateState, setDateState] = useState(new Date());
 
+    const [dateState, setDateState] = useState(new Date());
+    function onChange(dateState) {
+        // change results based on calendar date click
+        setDateState(dateState);
+    }
     const handleSearch = (e) => {
 
         if (pick.traveler && pick.pickup && pick.pickDown) {
@@ -34,11 +37,10 @@ const Destination = () => {
         newPickupPoint[e.target.name] = e.target.value;
         setPick(newPickupPoint);
     }
-    const [show, setShow] = useState({
-        activeDiv: "",
-        object: [{ id: 1 }, { id: 2 }]
-    });
-
+    const [show, setShow] = useState(false);
+    const showDisplay = (e) => {
+        setShow(show);
+    }
     return (
         <div className="row">
             <div className="col-md-4 my-1 p-5">
@@ -53,33 +55,48 @@ const Destination = () => {
                     <button className="btn-submit" > Search Vehicle </button>
 
                 </form>
-                {/* <Calendar
-                        onChange={onChange}
-                        value={value}
-                    /> */}
-                <p>Passenger Name: {pick.traveler}</p>
-                <p>PickPoint: {pick.pickup}</p>
-                <p>PickDown: {pick.pickDown}</p>
-                {/* <img src={imgUrl} alt=""/>
-                    <p>Type: {name}</p>
-                    <p>Type: {type}</p>
-                    <p>Type: {price}</p>
-                     */}
-                {
-                    selectedVehicle?.map(vehicle => {
-                        <div>
-                            <img src={vehicle.imgUrl} alt="" />
-                            <p>Type: {vehicle.name}</p>
-                            <p>Type: {vehicle.type}</p>
-                            <p>Type: {vehicle.price}</p>
-                        </div>
-                    })
-                }
+                <Calendar onChange={onChange} value={dateState} />
+                <div className="passengerDetails p-2 my-2">
+                     <p>Passenger Name: {pick.traveler}</p>
+                    <p>PickPoint: {pick.pickup}</p>
+                    <p>PickDown: {pick.pickDown}</p>
+                </div>
+
+                <div className="vechilesDetails p-2 my-2" >
+                    
+                    <div className="vechile-photo">
+                        <img src={selectedVehicle?.imgUrl} alt="" width="90%" />
+                    </div>
+                    <div className="ticket">
+                        <h3> {selectedVehicle?.name}</h3>
+                        <h3><img src={peopleicon} alt="" width="50%" /> {selectedVehicle?.capacity}</h3>
+                        <h6>${selectedVehicle?.price}</h6>
+                    </div>
+                </div>
+                <div className="vechilesDetails p-2 my-2" >
+                    <div className="vechile-photo">
+                        <img src={selectedVehicle?.imgUrl} alt="" width="90%" />
+                    </div>
+                    <div className="ticket">
+                        <h3> {selectedVehicle?.name}</h3>
+                        <h3><img src={peopleicon} alt="" width="50%" /> {selectedVehicle?.capacity}</h3>
+                        <h6>${selectedVehicle?.price}</h6>
+                    </div>
+                </div>
+                <div className="vechilesDetails p-2 my-2" >
+                    <div className="vechile-photo">
+                        <img src={selectedVehicle?.imgUrl} alt="" width="90%" />
+                    </div>
+                    <div className="ticket">
+                        <h3> {selectedVehicle?.name}</h3>
+                        <h3><img src={peopleicon} alt="" width="50%" /> {selectedVehicle?.capacity}</h3>
+                        <h6>${selectedVehicle?.price}</h6>
+                    </div>
+                </div>
             </div>
-            <div className="col-md-8 text-center">
+            <div className="col-md-6 text-center py-1 my-1">
 
-                <h1>Map</h1>
-
+                <img src={Map} alt="" />
             </div>
         </div>
     );
